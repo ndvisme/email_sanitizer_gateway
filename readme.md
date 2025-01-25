@@ -73,4 +73,4 @@ Used docker for so it would be easy & convinient to run on any machine.
 
 ## Disclaimers
 - I used ChatGPT here and there
-- I didn't drill down to everything i used. We said 4 hours +- 
+- I didn't drill down to everything which i used because of time limitations (We said 4 hours +-)
