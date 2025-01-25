@@ -3,14 +3,11 @@ This service sanitizes user prompts and LLM responses by masking personal email 
 
 ## Performance Assumptions
 My made up numbers assumptions
-- **Client**
   - 10,000 companies
   - 100 users per company
   - 100 prompts per user daily
-
-- **Load Metrics**
-  - Total daily requests: 100,000,000
-  - Requests per second: ~1,000
+    - Total daily requests: 100,000,000
+    - Requests per second: ~1,000
   - Average request size: ~305KB (10,000 words × 5 chars)
 
 ## How to run
