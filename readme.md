@@ -20,7 +20,7 @@ After the containers are all up & running (in a different terminal instance):
 docker exec -it llm ollama pull tinydolphin
 ```
 
-**Testing Script:**
+**Testing Script (makes random prompts with emails inside of them):**
 ```
 ./test_script.sh <AMOUNT_OF_DUMMY_PROMPTS> <AMOUNT_IN_PARALLEL>
 ```
@@ -29,17 +29,17 @@ docker exec -it llm ollama pull tinydolphin
 ./test_script.sh 30 10
 ```
 
-Then checkout the `response.json` file which has the API responses.
+Then checkout the `response.json` file which has results.
 
 ## Architecture
 ![Architecture Diagram](./archi.png)
 
 ## Technical Design
 
-**Core Services:**
+**Services:**
 - `api-service`: Client interaction and worker orchestration
-- `email-sanitizer-service`: Text sanitization processing
-- `llm-interactor-service`: LLM communication handler
+- `email-sanitizer-service`: Text sanitization
+- `llm-interactor-service`: LLM communication
 
 **Technology Stack:**
 - Load Balancer: Nginx
