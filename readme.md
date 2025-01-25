@@ -28,6 +28,7 @@ docker exec -it llm ollama pull tinydolphin
 ```
 ./test_script.sh 30 10
 ```
+Please be advised that this script wont use result is "cache hits" because the data is randomly generated.
 
 Then checkout the `response.json` file which has results.
 
