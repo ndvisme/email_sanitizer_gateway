@@ -11,12 +11,14 @@ My made up numbers assumptions
   - Average request size: ~305KB (10,000 words × 5 chars)
 
 ## How to run
+Firstly:
 ```
 docker compose up --build
-
+```
+After the containers are all up & running (in a different terminal instance):
+```
 docker exec -it llm ollama pull tinydolphin
 ```
-(the docker exec should be runned on a different terminal of course)
 
 **Testing Script Usage:**
 ```
