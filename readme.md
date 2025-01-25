@@ -20,10 +20,12 @@ After the containers are all up & running (in a different terminal instance):
 docker exec -it llm ollama pull tinydolphin
 ```
 
-**Testing Script Usage:**
+**Testing Script:**
 ```
 ./test_script.sh <AMOUNT_OF_DUMMY_PROMPTS> <AMOUNT_IN_PARALLEL>
+```
 # Example:
+```
 ./test_script.sh 30 10
 ```
 
