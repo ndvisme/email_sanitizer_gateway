@@ -32,6 +32,20 @@ Please be advised that this script wont use result is "cache hits" because the d
 
 Then checkout the `response.json` file which has results.
 
+## Client APIs:
+1. Auth:
+```
+  curl -s http://localhost:3000/auth/token
+```
+2. Prompt:
+  ```
+curl -s -X POST \
+        http://localhost:3000/sanitize \
+        -H "Authorization: Bearer $token" \
+        -H 'Content-Type: application/json' \
+        -d "{\"prompt\": \"$prompt\"}"
+```
+
 ## Architecture
 ![Architecture Diagram](./archi.png)
 
